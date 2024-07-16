@@ -1,0 +1,19 @@
+在原有yolov8的基础上，增加了
+1.向http端口实时发送json数据。
+2.rtsp视频流输入接口（多线程;生产者:3帧堆栈模式;消费者:后入先出，保证视频的实时检测。）
+3.指令化控制，针对特定检测任务输入特定指令即可自动选用其数据集、类别数、trt权重。
+4.在原有http（http://10.3.1.180:8080）的基础上，新增服务器（http://192.168.137.1:8080）
+5.增加输出，向http发送检测结果的源（rtsp流）信息。
+6.修改utils以同时保存检测原图和绘制图像至"TensorRT-Alpha-main/yolov8v1.0/save_result"，
+7.加入维护函数，以确保save_result储存内容不会爆炸。
+8.task函数由void类型转换为int类型，并且返回状态码0,1
+9.新增状态，火焰、抽烟，状态信息发送
+10.rtsp视频流断线重连
+
+命令示例：
+cd /home/jetson/dxh/TensorRT-Alpha-main/yolov8v1.0/build
+./app_yolov8 --rtsp="rtsp://admin:lh911456@10.3.1.168:554/Streaming/Channels/302" --coco
+
+
+ToDo：
+功能6，在误检时可能会导致save_result储存的图片太多致使内存爆炸。

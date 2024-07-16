@@ -1,0 +1,3 @@
+/home/jetson/dxh/C/build/CMakeFiles/rebuild_cache.dir
+/home/jetson/dxh/C/build/CMakeFiles/edit_cache.dir
+/home/jetson/dxh/C/build/CMakeFiles/my_program.dir

@@ -1,0 +1,12 @@
+此版本仅用于测试-适用于本地camera视频输入
+
+
+命令示例：
+cd /home/jetson/dxh/TensorRT-Alpha-main/yolov8cls v1.0/build
+
+
+### 摄像头推理
+./app_yolov8 --cam_id=0 --show
+
+### 图片推理
+./app_yolov8 --img='/home/jetson/dxh/TensorRT-Alpha-main/yolov8cls_test/10.3.1.168_04_20240710154247579.jpg' --savePath=../

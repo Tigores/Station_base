@@ -1,0 +1,5 @@
+
+命令示例：
+cd /home/jetson/dxh/TensorRT-Alpha-main/yolov8cls v1.0/build
+./app_yolov8 --rtsp="rtsp://admin:lh911456@10.3.1.168:554/Streaming/Channels/402" --weather --show
+

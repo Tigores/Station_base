@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/my_program.dir/test.cpp.o  -o my_program   -L/home/jetson/dxh/C/Bin  -Wl,-rpath,/home/jetson/dxh/C/Bin -ldhconfigsdk -ldhnetsdk -lStreamConvertor -ljsoncpp 

@@ -2,10 +2,6 @@ import cv2
 import time
 
 # 设置RTSP流地址
-    # std::string rtsp_url1 = "rtsp://admin:lh911456@10.3.1.168:554/Streaming/Channels/101"; // 第一个RTSP URL
-    # std::string rtsp_url2 = "rtsp://admin:lh911456@10.3.1.168:554/Streaming/Channels/301"; // 第二个RTSP URL
-# rtsp_url = "rtsp://admin:lh911456@10.3.1.168:554/cam/realmonitor?channel=1&subtype=1"
-# rtsp_url = "rtsp://admin:lh1014qq@192.168.137.144:554/Streaming/Channels/101"
 rtsp_url = "rtsp://admin:lh911456@10.3.1.168:554/Streaming/Channels/402"
 camera = 0
 # 打开RTSP流
